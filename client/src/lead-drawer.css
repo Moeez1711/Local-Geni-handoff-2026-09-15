@@ -1,0 +1,92 @@
+.shell .drawer{width:min(590px,calc(100vw - 24px));border:1px solid #dbe2eb;border-radius:16px;padding-bottom:10px;color:#334155;overscroll-behavior:contain}
+.shell .drawer .drawer-head{padding:18px 20px 16px;gap:14px;border-color:#e4e9f0;background:#fff;backdrop-filter:none}
+.shell .drawer .drawer-head>div:first-child{min-width:0}
+.shell .drawer .eyebrow{font-size:10px;line-height:16px;letter-spacing:.06em;color:#7a889b;margin-bottom:6px}
+.shell .drawer .drawer-head h2{font-size:19px;line-height:25px;letter-spacing:-.025em;font-weight:600;color:#202b39;overflow-wrap:anywhere}
+.shell .drawer .drawer-head p{font-size:12px;line-height:18px;margin:5px 0 10px;color:#6a7a90}
+.shell .drawer .drawer-tags{gap:7px;flex-wrap:wrap}
+.shell .drawer .drawer-tags .badge,.shell .drawer .drawer-tags .tier-pill{font-size:11px;line-height:17px;padding:3px 8px;border-radius:6px}
+.shell .drawer .icon-btn,.shell .drawer .ci{width:30px;height:30px;min-width:30px;padding:6px;border-radius:7px;color:#6b7c94}
+.shell .drawer .icon-btn{background:#f3f5f8}
+.shell .drawer .icon-btn svg{width:17px;height:17px}
+.shell .drawer .btn{height:32px;min-height:32px;padding:0 11px;gap:6px;font-size:12px;border-radius:7px;white-space:nowrap}
+.shell .drawer .btn.primary{background:#263444;color:white;border-color:#263444}
+.shell .drawer .quick{padding:12px 20px;gap:8px;align-items:center;border-color:#e4e9f0}
+.shell .drawer .drawer-whatsapp{border-color:#cfe5d8;color:#26764f;background:#f6fcf8}
+.shell .drawer .drawer-delete{margin-left:auto;color:#8a7780}
+.shell .drawer .drawer-delete:hover{background:#fff1ee;color:#bc4438}
+.shell .drawer .drawer-design-wrap{padding:14px 20px 0}
+.shell .drawer .drawer-design-link{display:flex;align-items:center;gap:11px;width:100%;padding:12px;border:1px solid #dbe5f2;border-radius:9px;background:#f6f9fd;text-align:left;cursor:pointer}
+.shell .drawer .drawer-design-link:hover{background:#eef4fc;border-color:#b8cce8}
+.shell .drawer .drawer-design-link>span:nth-child(2){display:flex;flex:1;flex-direction:column;gap:3px;min-width:0}
+.shell .drawer .drawer-design-link strong{font-size:13px;font-weight:600;color:#354c6b}
+.shell .drawer .drawer-design-link small{font-size:11px;line-height:16px;color:#6b7f97}
+.shell .drawer .drawer-design-icon{display:grid;place-items:center;width:33px;height:33px;border:1px solid #dce6f4;border-radius:8px;color:#58779f;background:#fff;flex-shrink:0}
+.shell .drawer .d-sec{padding:18px 20px;gap:11px;border-color:#e4e9f0}
+.shell .drawer .sec-head{margin:0;gap:12px;min-width:0}
+.shell .drawer .d-sec h4{display:flex;align-items:center;gap:8px;font-size:13px;line-height:20px;color:#2f4056;font-weight:600;text-transform:none;letter-spacing:0}
+.shell .drawer .d-sec h4 svg{color:#8191a8}
+.shell .drawer textarea,.shell .drawer select,.shell .drawer input{border:1px solid #cbd4df;border-radius:8px;background:#fff;color:#37475b;font-size:13px;min-width:0}
+.shell .drawer textarea{padding:11px 12px;line-height:1.6;resize:vertical;min-height:80px}
+.shell .drawer .drawer-outreach>textarea{min-height:180px}
+.shell .drawer textarea::placeholder{color:#91a0b3}
+.shell .drawer select,.shell .drawer input{height:34px;padding:0 10px}
+.shell .drawer .drawer-approach{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:11px;color:#748398}
+.shell .drawer .drawer-approach select{width:178px;height:30px;font-size:12px}
+.shell .drawer .drawer-helper{font-size:11px;line-height:17px;margin:0;color:#728197}
+.shell .drawer .drawer-record{border:1px solid #e3e8ef;border-radius:8px;background:#fafbfd;padding:10px 11px}
+.shell .drawer .drawer-record>summary{display:flex;align-items:center;gap:7px;cursor:pointer;list-style:none;font-size:11px;line-height:16px;color:#677b93}
+.shell .drawer summary::-webkit-details-marker{display:none}
+.shell .drawer .drawer-record>summary>svg:last-child{margin-left:auto}
+.shell .drawer .drawer-record[open]>summary{margin-bottom:10px}
+.shell .drawer .drawer-record-row{display:flex;align-items:flex-end;gap:9px;margin-top:10px}
+.shell .drawer .drawer-record-row>.field{width:170px}
+.shell .drawer .field{gap:6px;min-width:0}
+.shell .drawer .field>span{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:500;color:#718196}
+.shell .drawer .drawer-status{width:150px;height:30px;font-size:12px;background:#f5f7fa;border-color:#dce3ec}
+.shell .drawer .drawer-status.s-interested{background:#f2f0ff;color:#6c54a3;border-color:#e1daf3}
+.shell .drawer .drawer-status.s-converted{background:#eef9f2;color:#307654;border-color:#cfe6d9}
+.shell .drawer .drawer-status.s-not_interested{background:#fff4f1;color:#a26455;border-color:#efdcd4}
+.shell .drawer .drawer-followup{display:flex;gap:10px;align-items:flex-end;flex-wrap:wrap}
+.shell .drawer .drawer-followup>.field{width:158px}
+.shell .drawer .drawer-date-options{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.shell .drawer .drawer-date-options .btn{font-size:11px;height:30px;min-height:30px;padding-inline:9px;border-color:#e0e6ef;color:#6a7c93}
+.shell .drawer .drawer-relationship>small{font-size:10px;color:#8391a3}
+.shell .drawer .drawer-details{display:block;padding:0 20px}
+.shell .drawer .drawer-details>summary{display:flex;align-items:center;gap:8px;list-style:none;cursor:pointer;padding:16px 0;font-size:13px;font-weight:500;line-height:18px;color:#41536c}
+.shell .drawer .drawer-details>summary>svg{flex-shrink:0;color:#7f90a8}
+.shell .drawer .drawer-details>summary>span{flex:1}
+.shell .drawer .drawer-details>summary>small{font-size:10px;font-weight:400;color:#8090a6}
+.shell .drawer .drawer-details[open]>summary>svg:last-child,.shell .drawer .drawer-record[open]>summary>svg:last-child{transform:rotate(90deg)}
+.shell .drawer .drawer-details>summary~*{margin-bottom:15px}
+.shell .drawer .kv{grid-template-columns:86px minmax(0,1fr);gap:9px 12px;margin:0 0 17px;font-size:12px;line-height:18px}
+.shell .drawer .kv dt{font-size:12px;color:#8794a6}
+.shell .drawer .kv dd{color:#44566f;overflow-wrap:anywhere}
+.shell .drawer .kv dd small{display:block;font-size:10px;line-height:16px;color:#8897a9}
+.shell .drawer .drawer-reanalyse{margin-bottom:12px;font-size:11px}
+.shell .drawer .drawer-details p,.shell .drawer .drawer-details .not-measured{font-size:12px;line-height:18px}
+.shell .drawer .reasons{font-size:12px}
+.shell .drawer textarea:focus-visible,.shell .drawer select:focus-visible,.shell .drawer input:focus-visible,.shell .drawer summary:focus-visible,.shell .drawer button:focus-visible,.shell .drawer a:focus-visible{outline:2px solid #6386b0;outline-offset:2px}
+.shell .ask-geni-launch[hidden]{display:none}
+.qa-simulator-badge{position:fixed;bottom:8px;right:8px;z-index:99999;background:#151718;color:white;padding:8px 12px;border-radius:8px;font:600 11px system-ui;box-shadow:0 2px 8px #0002;pointer-events:none}
+body:has(.drawer) .qa-simulator-badge{right:auto;left:8px}
+.shell .access-page>.email-section-nav{margin:0}
+@media(max-width:600px){
+ .shell .drawer{inset:0;width:100%;border:0;border-radius:0;padding-bottom:30px}
+ .shell .drawer .drawer-head{padding:15px 16px;gap:8px}
+ .shell .drawer .drawer-head h2{font-size:17px;line-height:23px}
+ .shell .drawer .drawer-head>div:last-child{gap:3px}
+ .shell .drawer .drawer-head .icon-btn{width:27px;height:29px;min-width:27px}
+ .shell .drawer .quick{padding:11px 16px;gap:6px}
+ .shell .drawer .d-sec{padding:16px}
+ .shell .drawer .drawer-design-wrap{padding:12px 16px 0}
+ .shell .drawer .drawer-details{padding:0 16px}
+ .shell .drawer .drawer-details>summary>small{max-width:115px;text-align:right}
+ .shell .drawer .drawer-followup{gap:8px}
+ .shell .drawer .drawer-date-options .btn{padding-inline:7px}
+ .shell .drawer .drawer-status{width:142px}
+ .shell .drawer textarea{font-size:14px}
+ .qa-simulator-badge,body:has(.drawer) .qa-simulator-badge{left:0;right:0;bottom:0;padding:5px 10px;border-radius:0;font-size:9px;text-align:center}
+ .shell .ask-geni-launch{width:40px;height:40px;padding:0;justify-content:center;bottom:32px;right:12px}
+ .shell .ask-geni-launch>span{display:none}
+}

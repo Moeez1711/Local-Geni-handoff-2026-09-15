@@ -1,0 +1,1919 @@
+{
+  "source": "https://developers.google.com/maps/documentation/places/web-service/place-types?hl=en",
+  "retrievedAt": "2026-09-13T21:35:00.726Z",
+  "attribution": "Google Maps Platform, Place Types, Table A. Documentation licensed CC BY 4.0.",
+  "types": [
+    {
+      "type": "car_dealer",
+      "group": "Automotive"
+    },
+    {
+      "type": "car_rental",
+      "group": "Automotive"
+    },
+    {
+      "type": "car_repair",
+      "group": "Automotive"
+    },
+    {
+      "type": "car_wash",
+      "group": "Automotive"
+    },
+    {
+      "type": "ebike_charging_station",
+      "group": "Automotive"
+    },
+    {
+      "type": "electric_vehicle_charging_station",
+      "group": "Automotive"
+    },
+    {
+      "type": "gas_station",
+      "group": "Automotive"
+    },
+    {
+      "type": "parking",
+      "group": "Automotive"
+    },
+    {
+      "type": "parking_garage",
+      "group": "Automotive"
+    },
+    {
+      "type": "parking_lot",
+      "group": "Automotive"
+    },
+    {
+      "type": "rest_stop",
+      "group": "Automotive"
+    },
+    {
+      "type": "tire_shop",
+      "group": "Automotive"
+    },
+    {
+      "type": "truck_dealer",
+      "group": "Automotive"
+    },
+    {
+      "type": "business_center",
+      "group": "Business"
+    },
+    {
+      "type": "corporate_office",
+      "group": "Business"
+    },
+    {
+      "type": "coworking_space",
+      "group": "Business"
+    },
+    {
+      "type": "farm",
+      "group": "Business"
+    },
+    {
+      "type": "manufacturer",
+      "group": "Business"
+    },
+    {
+      "type": "ranch",
+      "group": "Business"
+    },
+    {
+      "type": "supplier",
+      "group": "Business"
+    },
+    {
+      "type": "television_studio",
+      "group": "Business"
+    },
+    {
+      "type": "art_gallery",
+      "group": "Culture"
+    },
+    {
+      "type": "art_museum",
+      "group": "Culture"
+    },
+    {
+      "type": "art_studio",
+      "group": "Culture"
+    },
+    {
+      "type": "auditorium",
+      "group": "Culture"
+    },
+    {
+      "type": "castle",
+      "group": "Culture"
+    },
+    {
+      "type": "cultural_landmark",
+      "group": "Culture"
+    },
+    {
+      "type": "fountain",
+      "group": "Culture"
+    },
+    {
+      "type": "historical_place",
+      "group": "Culture"
+    },
+    {
+      "type": "history_museum",
+      "group": "Culture"
+    },
+    {
+      "type": "monument",
+      "group": "Culture"
+    },
+    {
+      "type": "museum",
+      "group": "Culture"
+    },
+    {
+      "type": "performing_arts_theater",
+      "group": "Culture"
+    },
+    {
+      "type": "sculpture",
+      "group": "Culture"
+    },
+    {
+      "type": "academic_department",
+      "group": "Education"
+    },
+    {
+      "type": "educational_institution",
+      "group": "Education"
+    },
+    {
+      "type": "library",
+      "group": "Education"
+    },
+    {
+      "type": "preschool",
+      "group": "Education"
+    },
+    {
+      "type": "primary_school",
+      "group": "Education"
+    },
+    {
+      "type": "research_institute",
+      "group": "Education"
+    },
+    {
+      "type": "school",
+      "group": "Education"
+    },
+    {
+      "type": "secondary_school",
+      "group": "Education"
+    },
+    {
+      "type": "university",
+      "group": "Education"
+    },
+    {
+      "type": "adventure_sports_center",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "amphitheatre",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "amusement_center",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "amusement_park",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "aquarium",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "banquet_hall",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "barbecue_area",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "botanical_garden",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "bowling_alley",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "casino",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "childrens_camp",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "city_park",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "comedy_club",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "community_center",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "concert_hall",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "convention_center",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "cultural_center",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "cycling_park",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "dance_hall",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "dog_park",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "event_venue",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "ferris_wheel",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "garden",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "go_karting_venue",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "hiking_area",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "historical_landmark",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "indoor_playground",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "internet_cafe",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "karaoke",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "live_music_venue",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "marina",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "miniature_golf_course",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "movie_rental",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "movie_theater",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "national_park",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "night_club",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "observation_deck",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "off_roading_area",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "opera_house",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "paintball_center",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "park",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "philharmonic_hall",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "picnic_ground",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "planetarium",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "plaza",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "roller_coaster",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "skateboard_park",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "state_park",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "tourist_attraction",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "video_arcade",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "vineyard",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "visitor_center",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "water_park",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "wedding_venue",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "wildlife_park",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "wildlife_refuge",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "zoo",
+      "group": "Entertainment and Recreation"
+    },
+    {
+      "type": "public_bath",
+      "group": "Facilities"
+    },
+    {
+      "type": "public_bathroom",
+      "group": "Facilities"
+    },
+    {
+      "type": "stable",
+      "group": "Facilities"
+    },
+    {
+      "type": "accounting",
+      "group": "Finance"
+    },
+    {
+      "type": "atm",
+      "group": "Finance"
+    },
+    {
+      "type": "bank",
+      "group": "Finance"
+    },
+    {
+      "type": "acai_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "afghani_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "african_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "american_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "argentinian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "asian_fusion_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "asian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "australian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "austrian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "bagel_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "bakery",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "bangladeshi_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "bar",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "bar_and_grill",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "barbecue_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "basque_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "bavarian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "beer_garden",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "belgian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "bistro",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "brazilian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "breakfast_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "brewery",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "brewpub",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "british_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "brunch_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "buffet_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "burmese_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "burrito_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "cafe",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "cafeteria",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "cajun_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "cake_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "californian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "cambodian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "candy_store",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "cantonese_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "caribbean_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "cat_cafe",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "chicken_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "chicken_wings_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "chilean_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "chinese_noodle_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "chinese_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "chocolate_factory",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "chocolate_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "cocktail_bar",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "coffee_roastery",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "coffee_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "coffee_stand",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "colombian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "confectionery",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "croatian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "cuban_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "czech_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "danish_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "deli",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "dessert_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "dessert_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "dim_sum_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "diner",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "dog_cafe",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "donut_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "dumpling_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "dutch_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "eastern_european_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "ethiopian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "european_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "falafel_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "family_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "fast_food_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "filipino_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "fine_dining_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "fish_and_chips_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "fondue_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "food_court",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "french_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "fusion_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "gastropub",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "german_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "greek_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "gyro_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "halal_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "hamburger_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "hawaiian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "hookah_bar",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "hot_dog_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "hot_dog_stand",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "hot_pot_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "hungarian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "ice_cream_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "indian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "indonesian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "irish_pub",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "irish_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "israeli_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "italian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "japanese_curry_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "japanese_izakaya_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "japanese_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "juice_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "kebab_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "korean_barbecue_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "korean_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "latin_american_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "lebanese_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "lounge_bar",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "malaysian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "meal_delivery",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "meal_takeaway",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "mediterranean_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "mexican_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "middle_eastern_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "mongolian_barbecue_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "moroccan_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "noodle_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "north_indian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "oyster_bar_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "pakistani_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "pastry_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "persian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "peruvian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "pizza_delivery",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "pizza_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "polish_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "portuguese_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "pub",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "ramen_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "romanian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "russian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "salad_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "sandwich_shop",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "scandinavian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "seafood_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "shawarma_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "snack_bar",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "soul_food_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "soup_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "south_american_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "south_indian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "southwestern_us_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "spanish_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "sports_bar",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "sri_lankan_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "steak_house",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "sushi_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "swiss_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "taco_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "taiwanese_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "tapas_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "tea_house",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "tex_mex_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "thai_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "tibetan_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "tonkatsu_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "turkish_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "ukrainian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "vegan_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "vegetarian_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "vietnamese_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "western_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "wine_bar",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "winery",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "yakiniku_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "yakitori_restaurant",
+      "group": "Food and Drink"
+    },
+    {
+      "type": "administrative_area_level_1",
+      "group": "Geographical Areas"
+    },
+    {
+      "type": "administrative_area_level_2",
+      "group": "Geographical Areas"
+    },
+    {
+      "type": "country",
+      "group": "Geographical Areas"
+    },
+    {
+      "type": "locality",
+      "group": "Geographical Areas"
+    },
+    {
+      "type": "postal_code",
+      "group": "Geographical Areas"
+    },
+    {
+      "type": "school_district",
+      "group": "Geographical Areas"
+    },
+    {
+      "type": "city_hall",
+      "group": "Government"
+    },
+    {
+      "type": "courthouse",
+      "group": "Government"
+    },
+    {
+      "type": "embassy",
+      "group": "Government"
+    },
+    {
+      "type": "fire_station",
+      "group": "Government"
+    },
+    {
+      "type": "government_office",
+      "group": "Government"
+    },
+    {
+      "type": "local_government_office",
+      "group": "Government"
+    },
+    {
+      "type": "neighborhood_police_station",
+      "group": "Government"
+    },
+    {
+      "type": "police",
+      "group": "Government"
+    },
+    {
+      "type": "post_office",
+      "group": "Government"
+    },
+    {
+      "type": "chiropractor",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "dental_clinic",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "dentist",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "doctor",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "drugstore",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "general_hospital",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "hospital",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "massage",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "massage_spa",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "medical_center",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "medical_clinic",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "medical_lab",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "pharmacy",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "physiotherapist",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "sauna",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "skin_care_clinic",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "spa",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "tanning_studio",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "wellness_center",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "yoga_studio",
+      "group": "Health and Wellness"
+    },
+    {
+      "type": "apartment_building",
+      "group": "Housing"
+    },
+    {
+      "type": "apartment_complex",
+      "group": "Housing"
+    },
+    {
+      "type": "condominium_complex",
+      "group": "Housing"
+    },
+    {
+      "type": "housing_complex",
+      "group": "Housing"
+    },
+    {
+      "type": "bed_and_breakfast",
+      "group": "Lodging"
+    },
+    {
+      "type": "budget_japanese_inn",
+      "group": "Lodging"
+    },
+    {
+      "type": "campground",
+      "group": "Lodging"
+    },
+    {
+      "type": "camping_cabin",
+      "group": "Lodging"
+    },
+    {
+      "type": "cottage",
+      "group": "Lodging"
+    },
+    {
+      "type": "extended_stay_hotel",
+      "group": "Lodging"
+    },
+    {
+      "type": "farmstay",
+      "group": "Lodging"
+    },
+    {
+      "type": "guest_house",
+      "group": "Lodging"
+    },
+    {
+      "type": "hostel",
+      "group": "Lodging"
+    },
+    {
+      "type": "hotel",
+      "group": "Lodging"
+    },
+    {
+      "type": "inn",
+      "group": "Lodging"
+    },
+    {
+      "type": "japanese_inn",
+      "group": "Lodging"
+    },
+    {
+      "type": "lodging",
+      "group": "Lodging"
+    },
+    {
+      "type": "mobile_home_park",
+      "group": "Lodging"
+    },
+    {
+      "type": "motel",
+      "group": "Lodging"
+    },
+    {
+      "type": "private_guest_room",
+      "group": "Lodging"
+    },
+    {
+      "type": "resort_hotel",
+      "group": "Lodging"
+    },
+    {
+      "type": "rv_park",
+      "group": "Lodging"
+    },
+    {
+      "type": "beach",
+      "group": "Natural Features"
+    },
+    {
+      "type": "island",
+      "group": "Natural Features"
+    },
+    {
+      "type": "lake",
+      "group": "Natural Features"
+    },
+    {
+      "type": "mountain_peak",
+      "group": "Natural Features"
+    },
+    {
+      "type": "nature_preserve",
+      "group": "Natural Features"
+    },
+    {
+      "type": "river",
+      "group": "Natural Features"
+    },
+    {
+      "type": "scenic_spot",
+      "group": "Natural Features"
+    },
+    {
+      "type": "woods",
+      "group": "Natural Features"
+    },
+    {
+      "type": "buddhist_temple",
+      "group": "Places of Worship"
+    },
+    {
+      "type": "church",
+      "group": "Places of Worship"
+    },
+    {
+      "type": "hindu_temple",
+      "group": "Places of Worship"
+    },
+    {
+      "type": "mosque",
+      "group": "Places of Worship"
+    },
+    {
+      "type": "shinto_shrine",
+      "group": "Places of Worship"
+    },
+    {
+      "type": "synagogue",
+      "group": "Places of Worship"
+    },
+    {
+      "type": "aircraft_rental_service",
+      "group": "Services"
+    },
+    {
+      "type": "association_or_organization",
+      "group": "Services"
+    },
+    {
+      "type": "astrologer",
+      "group": "Services"
+    },
+    {
+      "type": "barber_shop",
+      "group": "Services"
+    },
+    {
+      "type": "beautician",
+      "group": "Services"
+    },
+    {
+      "type": "beauty_salon",
+      "group": "Services"
+    },
+    {
+      "type": "body_art_service",
+      "group": "Services"
+    },
+    {
+      "type": "catering_service",
+      "group": "Services"
+    },
+    {
+      "type": "cemetery",
+      "group": "Services"
+    },
+    {
+      "type": "chauffeur_service",
+      "group": "Services"
+    },
+    {
+      "type": "child_care_agency",
+      "group": "Services"
+    },
+    {
+      "type": "consultant",
+      "group": "Services"
+    },
+    {
+      "type": "courier_service",
+      "group": "Services"
+    },
+    {
+      "type": "electrician",
+      "group": "Services"
+    },
+    {
+      "type": "employment_agency",
+      "group": "Services"
+    },
+    {
+      "type": "florist",
+      "group": "Services"
+    },
+    {
+      "type": "food_delivery",
+      "group": "Services"
+    },
+    {
+      "type": "foot_care",
+      "group": "Services"
+    },
+    {
+      "type": "funeral_home",
+      "group": "Services"
+    },
+    {
+      "type": "hair_care",
+      "group": "Services"
+    },
+    {
+      "type": "hair_salon",
+      "group": "Services"
+    },
+    {
+      "type": "insurance_agency",
+      "group": "Services"
+    },
+    {
+      "type": "laundry",
+      "group": "Services"
+    },
+    {
+      "type": "lawyer",
+      "group": "Services"
+    },
+    {
+      "type": "locksmith",
+      "group": "Services"
+    },
+    {
+      "type": "makeup_artist",
+      "group": "Services"
+    },
+    {
+      "type": "marketing_consultant",
+      "group": "Services"
+    },
+    {
+      "type": "moving_company",
+      "group": "Services"
+    },
+    {
+      "type": "nail_salon",
+      "group": "Services"
+    },
+    {
+      "type": "non_profit_organization",
+      "group": "Services"
+    },
+    {
+      "type": "painter",
+      "group": "Services"
+    },
+    {
+      "type": "pet_boarding_service",
+      "group": "Services"
+    },
+    {
+      "type": "pet_care",
+      "group": "Services"
+    },
+    {
+      "type": "plumber",
+      "group": "Services"
+    },
+    {
+      "type": "psychic",
+      "group": "Services"
+    },
+    {
+      "type": "real_estate_agency",
+      "group": "Services"
+    },
+    {
+      "type": "roofing_contractor",
+      "group": "Services"
+    },
+    {
+      "type": "service",
+      "group": "Services"
+    },
+    {
+      "type": "shipping_service",
+      "group": "Services"
+    },
+    {
+      "type": "storage",
+      "group": "Services"
+    },
+    {
+      "type": "summer_camp_organizer",
+      "group": "Services"
+    },
+    {
+      "type": "tailor",
+      "group": "Services"
+    },
+    {
+      "type": "telecommunications_service_provider",
+      "group": "Services"
+    },
+    {
+      "type": "tour_agency",
+      "group": "Services"
+    },
+    {
+      "type": "tourist_information_center",
+      "group": "Services"
+    },
+    {
+      "type": "travel_agency",
+      "group": "Services"
+    },
+    {
+      "type": "veterinary_care",
+      "group": "Services"
+    },
+    {
+      "type": "asian_grocery_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "auto_parts_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "bicycle_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "book_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "building_materials_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "butcher_shop",
+      "group": "Shopping"
+    },
+    {
+      "type": "cell_phone_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "clothing_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "convenience_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "cosmetics_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "department_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "discount_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "discount_supermarket",
+      "group": "Shopping"
+    },
+    {
+      "type": "electronics_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "farmers_market",
+      "group": "Shopping"
+    },
+    {
+      "type": "flea_market",
+      "group": "Shopping"
+    },
+    {
+      "type": "food_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "furniture_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "garden_center",
+      "group": "Shopping"
+    },
+    {
+      "type": "general_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "gift_shop",
+      "group": "Shopping"
+    },
+    {
+      "type": "grocery_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "hardware_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "health_food_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "home_goods_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "home_improvement_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "hypermarket",
+      "group": "Shopping"
+    },
+    {
+      "type": "jewelry_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "liquor_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "market",
+      "group": "Shopping"
+    },
+    {
+      "type": "pet_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "shoe_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "shopping_mall",
+      "group": "Shopping"
+    },
+    {
+      "type": "sporting_goods_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "sportswear_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "store",
+      "group": "Shopping"
+    },
+    {
+      "type": "supermarket",
+      "group": "Shopping"
+    },
+    {
+      "type": "tea_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "thrift_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "toy_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "warehouse_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "wholesaler",
+      "group": "Shopping"
+    },
+    {
+      "type": "womens_clothing_store",
+      "group": "Shopping"
+    },
+    {
+      "type": "arena",
+      "group": "Sports"
+    },
+    {
+      "type": "athletic_field",
+      "group": "Sports"
+    },
+    {
+      "type": "fishing_charter",
+      "group": "Sports"
+    },
+    {
+      "type": "fishing_pier",
+      "group": "Sports"
+    },
+    {
+      "type": "fishing_pond",
+      "group": "Sports"
+    },
+    {
+      "type": "fitness_center",
+      "group": "Sports"
+    },
+    {
+      "type": "golf_course",
+      "group": "Sports"
+    },
+    {
+      "type": "gym",
+      "group": "Sports"
+    },
+    {
+      "type": "ice_skating_rink",
+      "group": "Sports"
+    },
+    {
+      "type": "indoor_golf_course",
+      "group": "Sports"
+    },
+    {
+      "type": "playground",
+      "group": "Sports"
+    },
+    {
+      "type": "race_course",
+      "group": "Sports"
+    },
+    {
+      "type": "ski_resort",
+      "group": "Sports"
+    },
+    {
+      "type": "sports_activity_location",
+      "group": "Sports"
+    },
+    {
+      "type": "sports_club",
+      "group": "Sports"
+    },
+    {
+      "type": "sports_coaching",
+      "group": "Sports"
+    },
+    {
+      "type": "sports_complex",
+      "group": "Sports"
+    },
+    {
+      "type": "sports_school",
+      "group": "Sports"
+    },
+    {
+      "type": "stadium",
+      "group": "Sports"
+    },
+    {
+      "type": "swimming_pool",
+      "group": "Sports"
+    },
+    {
+      "type": "tennis_court",
+      "group": "Sports"
+    },
+    {
+      "type": "airport",
+      "group": "Transportation"
+    },
+    {
+      "type": "airstrip",
+      "group": "Transportation"
+    },
+    {
+      "type": "bike_sharing_station",
+      "group": "Transportation"
+    },
+    {
+      "type": "bridge",
+      "group": "Transportation"
+    },
+    {
+      "type": "bus_station",
+      "group": "Transportation"
+    },
+    {
+      "type": "bus_stop",
+      "group": "Transportation"
+    },
+    {
+      "type": "ferry_service",
+      "group": "Transportation"
+    },
+    {
+      "type": "ferry_terminal",
+      "group": "Transportation"
+    },
+    {
+      "type": "heliport",
+      "group": "Transportation"
+    },
+    {
+      "type": "international_airport",
+      "group": "Transportation"
+    },
+    {
+      "type": "light_rail_station",
+      "group": "Transportation"
+    },
+    {
+      "type": "park_and_ride",
+      "group": "Transportation"
+    },
+    {
+      "type": "subway_station",
+      "group": "Transportation"
+    },
+    {
+      "type": "taxi_service",
+      "group": "Transportation"
+    },
+    {
+      "type": "taxi_stand",
+      "group": "Transportation"
+    },
+    {
+      "type": "toll_station",
+      "group": "Transportation"
+    },
+    {
+      "type": "train_station",
+      "group": "Transportation"
+    },
+    {
+      "type": "train_ticket_office",
+      "group": "Transportation"
+    },
+    {
+      "type": "tram_stop",
+      "group": "Transportation"
+    },
+    {
+      "type": "transit_depot",
+      "group": "Transportation"
+    },
+    {
+      "type": "transit_station",
+      "group": "Transportation"
+    },
+    {
+      "type": "transit_stop",
+      "group": "Transportation"
+    },
+    {
+      "type": "transportation_service",
+      "group": "Transportation"
+    },
+    {
+      "type": "truck_stop",
+      "group": "Transportation"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+.ask-geni-launch{position:fixed;right:24px;bottom:56px;z-index:60;display:flex;align-items:center;gap:8px;border:0;border-radius:999px;background:#151718;color:#fff;padding:11px 16px;font-size:13px;box-shadow:0 3px 12px #0002;cursor:pointer}
+.ask-geni-panel{position:fixed;inset:12px 12px 12px auto;margin:0;width:min(480px,calc(100vw - 24px));max-width:none;max-height:none;height:calc(100dvh - 24px);border:1px solid var(--color-line);border-radius:16px;padding:0;background:#fff;color:var(--color-ink-2);box-shadow:0 12px 80px #0002}
+.ask-geni-panel[open]{display:flex;flex-direction:column}
+.ask-geni-panel::backdrop{background:#15171830}
+.ask-geni-panel>header{padding:16px;border-bottom:1px solid var(--color-line);display:flex;align-items:center;justify-content:space-between;gap:8px}
+.ask-geni-panel>header>div{display:flex;align-items:center;gap:8px}
+.ask-geni-panel h2{font-size:16px;margin:0}.ask-geni-panel header span{font-size:10px;color:var(--color-muted);text-transform:capitalize}
+.ask-geni-controls{display:flex;gap:8px;padding:12px 16px;border-bottom:1px solid var(--color-line)}
+.ask-geni-controls label{min-width:0;flex:1}.ask-geni-controls select{width:100%;height:32px;font-size:11px;min-width:0}
+.ask-geni-providers{display:flex;gap:3px;align-items:center;flex:none;padding:2px;background:#f5f5f7;border-radius:8px}
+.ask-geni-providers .ci{width:30px;height:30px;min-width:30px;border:1px solid transparent;border-radius:6px}
+.ask-geni-providers .ci.selected{background:#fff;border-color:#d9dce2;box-shadow:0 1px 2px #0000000a}
+.ask-geni-controls{align-items:center}
+.ask-geni-connect{display:flex;align-items:center;gap:8px;padding:12px 16px;background:#faf6ee;font-size:12px}.ask-geni-connect .btn{margin-left:auto}
+.ask-geni-messages{flex:1;min-height:0;overflow:auto;padding:20px 16px}
+.ask-geni-empty{display:grid;gap:12px;padding-top:25px;justify-items:start}.ask-geni-empty>svg{color:var(--color-muted);margin-bottom:8px}.ask-geni-empty h3{font-size:17px}.ask-geni-empty p{color:var(--color-muted);font-size:12px;margin:0 0 12px}
+.ask-geni-empty button{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;padding:12px;border:1px solid var(--color-line);border-radius:10px;font-size:12px;background:#fff;cursor:pointer}
+.ask-geni-messages article{margin-bottom:18px;font-size:13px}.ask-geni-messages article small{font-size:10px;color:var(--color-muted)}.ask-geni-messages article p{white-space:pre-wrap;overflow-wrap:anywhere;margin:5px 0;line-height:1.6}.ask-geni-messages article.user{background:#f4f5f7;border-radius:12px;padding:10px 12px}
+.ask-geni-composer{border-top:1px solid var(--color-line);padding:12px 16px;display:grid;gap:10px}.ask-geni-composer>div{display:flex;align-items:flex-end;gap:8px}.ask-geni-composer textarea{flex:1;min-width:0;font-size:13px;resize:none;border-radius:12px;padding:10px}.ask-geni-composer .btn{width:36px;height:36px;min-width:36px;padding:0;flex-shrink:0}.ask-geni-composer>small{font-size:10px;color:var(--color-muted)}.ask-geni-composer .system-auto-check span{font-size:11px}
+.ask-geni-error{color:#b43b36;font-size:12px;padding:0 16px 8px;margin:0}.ask-geni-sample{font-size:10px;background:#f5f5f7;padding:5px 16px;margin:0;color:var(--color-muted)}
+@media(max-width:600px){.ask-geni-panel{inset:0;width:100%;height:100dvh;border-radius:0}.ask-geni-launch{right:16px;bottom:56px}.ask-geni-controls select,.ask-geni-composer textarea{font-size:16px}}

@@ -1,0 +1,75 @@
+/* Local Geni workspace surfaces use the shared product tokens. */
+.auth-shell {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--background-brand);
+}
+.auth-card {
+  width: min(100%, 440px);
+  padding: 36px;
+  background: var(--color-panel);
+  border: 1px solid var(--color-line-2);
+  border-radius: var(--radius-modal);
+  box-shadow: var(--shadow-card);
+}
+.auth-wordmark { display: flex; gap: 12px; align-items: center; font-size: 18px; font-weight: 600; letter-spacing: -.025em; margin-bottom: 30px; }
+.auth-card h1 { font-size: 27px; line-height: 1.2; letter-spacing: -.03em; margin-bottom: 24px; }
+.auth-card form { display: grid; gap: 20px; }
+.auth-card input { width: 100%; }
+.qa-history { display: grid; gap: 0; margin-top: 16px; }
+.qa-history > div { display: grid; grid-template-columns: 90px minmax(0, 1fr); padding: 14px 0; border-top: 1px solid var(--color-line-2); gap: 6px 16px; }
+.qa-history p { grid-column: 1 / -1; color: var(--color-muted); overflow-wrap: anywhere; }
+.qa-history strong { text-transform: capitalize; }
+.home-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.home-step { padding: 26px; display: flex; flex-direction: column; align-items: flex-start; }
+.home-step-top { display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--color-muted); margin-bottom: 30px; }
+.home-step-top span { font-size: 12px; font-weight: 600; letter-spacing: .04em; font-variant-numeric: tabular-nums; }
+.home-step-top svg { color: var(--color-accent); }
+.home-step h2 { font-size: 21px; line-height: 1.25; letter-spacing: -.025em; font-weight: 600; }
+.home-step p { color: var(--color-muted); line-height: 1.65; margin: 12px 0 26px; flex: 1; }
+.home-step .btn { min-height: 40px; }
+.home-status { padding: 24px; display: flex; gap: 24px; justify-content: space-between; align-items: center; }
+.home-status h2 { font-size: 18px; font-weight: 600; margin: 0 0 6px; }
+.home-status-items { display: flex; gap: 24px; }
+.home-status-items button { display: flex; flex-direction: column; gap: 8px; text-align: left; background: transparent; border: 0; border-radius: 8px; padding: 6px; color: inherit; cursor: pointer; }
+.home-status-items button:hover strong { color: var(--color-accent-ink); }
+.home-status-items span { font-size: 12px; color: var(--color-muted); }
+.home-status-items strong { font-size: 14px; font-weight: 600; }
+.home-lead-list > div { display: flex; align-items: center; gap: 22px; padding: 18px 24px; border-top: 1px solid var(--color-line-2); }
+.home-lead-name { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; background: transparent; border: 0; border-radius: 5px; color: inherit; text-align: left; cursor: pointer; }
+.home-lead-name strong { font-size: 15px; font-weight: 600; }
+.home-lead-name span { font-size: 12px; color: var(--color-muted); max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.home-empty { padding: 24px; color: var(--color-muted); }
+.btn.danger { color: var(--color-bad); border-color: color-mix(in srgb, var(--color-bad) 25%, white); background: color-mix(in srgb, var(--color-bad-soft) 30%, white); }
+.btn.danger:hover:not(:disabled) { background: var(--color-bad-soft); border-color: color-mix(in srgb, var(--color-bad) 40%, white); }
+.lead-delete-row { padding: 0 24px 16px; }
+.home-page { gap: 24px; }
+.rail nav { overflow-y: auto; min-height: 0; }
+.rail, .rail nav { scrollbar-width: thin; }
+.rail-scan { flex-shrink: 0; }
+.rail nav button:disabled { opacity: .45; cursor: wait; }
+.form details summary { cursor: pointer; }
+.form details[open] > form { margin-top: 20px; }
+@media (max-width: 1100px) {
+  .home-steps { gap: 12px; }
+  .home-step { padding: 20px; }
+  .home-status { align-items: flex-start; flex-direction: column; }
+  .home-status-items { width: 100%; justify-content: space-between; }
+}
+@media (max-width: 650px) {
+  .home-steps { grid-template-columns: 1fr; }
+  .home-step-top { margin-bottom: 14px; }
+  .home-step { padding: 22px; }
+  .home-step p { margin-bottom: 18px; }
+  .home-lead-list > div { flex-wrap: wrap; gap: 12px; padding: 18px; }
+  .home-lead-name { flex-basis: calc(100% - 90px); }
+  .home-lead-list > div > .btn { width: 100%; }
+  .home-status-items { flex-wrap: wrap; gap: 18px; }
+  .auth-card { padding: 26px; }
+  .qa-history > div { grid-template-columns: 1fr; }
+  .qa-history p { grid-column: auto; }
+  .home-page .results-toolbar { align-items: flex-start; }
+}

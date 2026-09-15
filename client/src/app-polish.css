@@ -1,0 +1,12 @@
+/* Shared frame: calm surfaces and actions that stay clear of the work area. */
+.shell .main{background:var(--color-bg)}
+.shell .btn.primary:not(:disabled):hover{background:var(--color-accent-dark);border-color:var(--color-accent-dark);color:#fff}
+.shell .toolbar-actions>.ask-geni-launch.in-toolbar{position:static;inset:auto;z-index:auto;border-radius:var(--radius-control);height:var(--control-height-compact);min-height:var(--control-height-compact);padding:0 10px;box-shadow:none;gap:6px;flex-shrink:0;font-size:12px;background:var(--color-accent-soft);border:1px solid var(--color-accent-border);color:var(--color-accent-ink)}
+.shell .toolbar-actions>.ask-geni-launch.in-toolbar[hidden]{display:none!important}
+.qa-simulator-badge{display:none!important}
+.shell .export-builder>.page-head .btn.primary{height:var(--control-height);min-height:var(--control-height);border-radius:var(--radius-control);padding:0 14px;font-size:12px}
+.search-map-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:220px;padding:26px;background:linear-gradient(135deg,#f4f6fa,#edf2f7);border:1px dashed #cbd4df;border-radius:12px;color:#5f7087;text-align:center}
+.search-map-placeholder>svg{width:34px;height:34px;padding:12px;box-sizing:content-box;background:white;border:1px solid #dce4ed;border-radius:50%;color:#647c98}
+.search-map-placeholder strong{font-size:15px;color:#33465e}.search-map-placeholder p{margin:0;font-size:12px;line-height:1.5}.search-map-placeholder>span{font-size:11px;color:#75859a}
+@media(max-width:800px){.shell .toolbar-actions{gap:8px}.shell .toolbar-actions>.ask-geni-launch.in-toolbar{width:32px;padding:0;justify-content:center}.ask-geni-launch.in-toolbar>span{display:none}}
+@media(max-width:600px){.shell .workspace-badge.is-sample{display:flex;font-size:0;padding:5px 6px;gap:0}.shell .workspace-badge.is-sample .mode-dot{display:none}.shell .workspace-badge.is-sample:after{content:'Sample';font-size:10px}.shell .toolbar{gap:8px}.shell .toolbar-actions{gap:5px}.search-map-placeholder{min-height:170px}.shell .export-builder>.page-head .page-actions{width:100%}.shell .export-builder>.page-head .btn.primary{width:100%;height:38px}.shell .export-preview-scroll td{font-size:12px}}

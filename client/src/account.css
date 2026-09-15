@@ -1,0 +1,102 @@
+.account-avatar{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:50%;background:#edf0f5;color:#52647b;font-size:13px;font-weight:600;overflow:hidden}
+.account-avatar img{width:100%;height:100%;object-fit:cover}
+.shell .account-shortcut{padding:0;background:transparent}
+.account-menu-wrap{position:relative}
+.shell .account-menu{position:absolute;right:0;top:calc(100% + 10px);z-index:70;width:248px;max-width:calc(100vw - 24px);padding:7px;background:#fff;border:1px solid #dce2e9;border-radius:12px;box-shadow:0 8px 30px #24374d1a}
+.shell .account-menu-identity{display:flex;gap:10px;align-items:flex-start;padding:12px 9px 14px;margin-bottom:5px;border-bottom:1px solid #e5e9ef}
+.shell .account-menu-identity>div{min-width:0;display:flex;flex-direction:column;gap:3px}
+.shell .account-menu-identity strong{color:#212a35;font-size:14px;font-weight:600;line-height:19px}
+.shell .account-menu-identity span:not(.account-avatar){font-size:12px;line-height:17px;color:#657487;overflow-wrap:anywhere}
+.shell .account-menu-identity small{font-size:11px;color:#6b788a;text-transform:capitalize}
+.shell .account-menu>button{display:flex;align-items:center;gap:11px;width:100%;padding:10px 12px;border-radius:7px;color:#273441;font-size:13px;text-align:left;cursor:pointer}
+.shell .account-menu>button svg{color:#64758c}
+.shell .account-menu>button:hover,.shell .account-menu>button:focus-visible{background:#f0f4fa;outline:0}
+.shell .account-menu>button.account-signout{border-top:1px solid #e5e9ef;border-radius:0 0 7px 7px;margin-top:5px;padding-top:13px;color:#b53d35}
+.shell .account-menu>button.account-signout svg{color:inherit}
+.shell .account-dialog{position:fixed;inset:0;margin:auto;width:520px;max-width:calc(100vw - 32px);max-height:calc(100dvh - 40px);padding:0;border:1px solid #dce2e9;border-radius:16px;background:white;color:#273441;box-shadow:0 24px 80px #17253d33;overflow:auto;overscroll-behavior:contain}
+.shell .account-dialog::backdrop{background:#1d2c4966;backdrop-filter:blur(2px)}
+.shell .account-dialog>header{display:flex;align-items:center;justify-content:space-between;padding:19px 24px;border-bottom:1px solid #e4e8ef;gap:12px}
+.shell .account-dialog>header h2{font-size:18px;font-weight:600;line-height:24px;letter-spacing:-.02em;color:#20272f}
+.shell .account-dialog-body{padding:24px}
+.shell .account-dialog .form{display:flex;flex-direction:column;gap:18px}
+.shell .account-dialog .field{display:flex;flex-direction:column;gap:7px;min-width:0}
+.shell .account-dialog .field>span{font-size:13px;line-height:18px;font-weight:500;color:#364354;margin:0}
+.shell .account-dialog .field input:not([type=file]),.shell .account-dialog .field select{height:36px;min-height:36px;padding:0 11px;font-size:13px;line-height:20px;border:1px solid #bfc8d4;border-radius:8px;background:#fff;width:100%;min-width:0}
+.shell .account-dialog input:focus,.shell .account-dialog select:focus{outline:2px solid #263444;outline-offset:2px}
+.shell .account-dialog .hint,.shell .account-dialog .field small{font-size:12px;line-height:18px;color:#657487}
+.shell .account-dialog footer{display:flex;justify-content:flex-end;align-items:center;gap:9px;padding:16px 24px;border-top:1px solid #e4e8ef}
+.shell .account-dialog .btn{min-height:32px;height:32px;padding:0 13px;gap:7px;font-size:12px;white-space:nowrap}
+.shell .account-dialog .btn.primary{background:#222b35;border-color:#222b35;color:#fff}
+.shell .account-dialog .btn.primary:disabled{background:#e6eaf0;border-color:#e6eaf0;color:#7a8695}
+.shell .account-dialog .ci{width:30px;height:30px}
+.shell .account-dialog .profile-picture-row{display:flex;align-items:center;gap:16px;margin-bottom:4px}
+.shell .account-dialog .profile-picture{width:68px;height:68px;border-radius:15px;font-size:26px;background:#eef2f8;color:#4c6689}
+.shell .account-dialog .profile-picture-row .preview-actions{gap:8px;margin-bottom:8px}
+.shell .account-dialog .account-file-input{display:none}
+.shell .account-dialog .profile-password{padding-top:17px;border-top:1px solid #e4e8ef}
+.shell .account-dialog .profile-password summary{display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;font-weight:500;color:#384960;list-style:none}
+.shell .account-dialog .profile-password summary::after{content:'+';margin-left:auto;font-size:18px}
+.shell .account-dialog .profile-password[open] summary::after{content:'−'}
+.shell .account-dialog .profile-password summary::-webkit-details-marker{display:none}
+.shell .account-dialog .profile-password .field{margin-top:14px}
+.account-error{font-size:12px;line-height:18px;border:1px solid #e6bdb7;background:#fff5f3;color:#a33229;padding:10px 12px;border-radius:8px;overflow-wrap:anywhere}
+.shell .account-session{display:flex;gap:12px;align-items:flex-start;padding-bottom:16px;border-bottom:1px solid #e5e9ef}
+.shell .account-session:last-child{padding-bottom:0;border-bottom:0}
+.shell .account-session>svg{color:#627892;flex-shrink:0;margin-top:3px}
+.shell .account-session>div{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+.shell .account-session strong{font-size:13px;color:#2a394c;font-weight:500}
+.shell .account-session small{font-size:11px;line-height:16px;color:#647589}
+.shell .account-role,.shell .account-status{display:inline-flex;align-items:center;gap:6px;border-radius:20px;padding:3px 8px;font-size:11px;line-height:15px;white-space:nowrap;text-transform:capitalize}
+.shell .account-role{background:#f2f4f7;border:1px solid #e0e5ed;color:#607086}
+.shell .account-status.active{color:#24744e;background:#edf9f2;border:1px solid #bfe4cf}
+.shell .account-status.active::before,.shell .account-status.pending::before{content:'';width:5px;height:5px;border-radius:50%;background:currentColor}
+.shell .account-status.disabled,.shell .account-status.expired{color:#6b7584;background:#f0f2f5;border:1px solid #e1e5eb}
+.shell .account-status.pending{color:#97671b;background:#fff6e7;border:1px solid #efddba}
+.shell .team-workspace{padding:0;gap:0;overflow:hidden}
+.shell .team-workspace>.card-head{padding:18px 20px;margin:0}
+.shell .team-workspace>.card-head h2{display:flex;align-items:center;gap:8px;font-size:15px}
+.shell .team-workspace>.card-head h2>svg{color:#6c7d93}
+.shell .team-workspace .account-count{font-size:11px;border-radius:5px;background:#f0f3f7;color:#657589;padding:2px 6px;font-weight:500}
+.shell .team-table{min-width:770px}
+.shell .team-table th,.shell .team-table td{padding:12px 20px;text-align:left;vertical-align:middle}
+.shell .team-table thead th{font-size:10px;color:#728197;letter-spacing:.04em;background:#fbfcfe;border-bottom:1px solid #e3e8ef}
+.shell .team-table tr>*:first-child{width:29%}
+.shell .team-table tbody td{height:62px;font-size:12px;color:#526176;border-bottom:1px solid #e7ebf0}
+.shell .team-table tbody tr:last-child td{border-bottom:0}
+.shell .team-table .team-actions-heading{text-align:right}
+.shell .team-table .team-row-actions{justify-content:flex-end;flex-wrap:nowrap;gap:3px}
+.shell .team-member{display:flex;align-items:center;gap:10px;min-width:0}
+.shell .team-member>div{min-width:0}
+.shell .team-member strong{display:flex;align-items:center;gap:7px;font-size:13px;color:#263343;font-weight:600}
+.shell .team-member small{display:block;color:#728096;margin-top:3px;font-size:12px;overflow-wrap:anywhere}
+.shell .team-you{font-size:10px;font-weight:400;background:#eef1f5;border-radius:4px;padding:2px 5px;color:#62738a}
+.shell .team-invitations{border-top:1px solid #e4e9f0;padding:16px 20px}
+.shell .team-invitations h3{display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:10px}
+.shell .team-invite-row{display:flex;align-items:center;gap:10px;padding:10px 0}
+.shell .team-invite-row>div{min-width:0;flex:1}
+.shell .team-invite-row strong{font-size:12px;font-weight:500;overflow-wrap:anywhere}
+.shell .team-invite-row small{display:block;font-size:11px;color:#68788b;margin-top:3px}
+.shell .invite-ready{display:flex;align-items:center;gap:12px}
+.shell .invite-ready>span{background:#e8f5ef;border:1px solid #c8e3d6;border-radius:10px;display:grid;place-items:center;width:42px;height:42px;color:#377958;flex-shrink:0}
+.shell .invite-ready strong{font-size:14px;overflow-wrap:anywhere}
+.shell .invite-ready p{font-size:12px;color:#63768b;margin-top:4px}
+.shell .invite-link{display:flex;align-items:center;gap:8px;min-width:0}
+.shell .invite-link input{flex:1;min-width:0}
+.auth-back-link{display:block;font-size:12px;margin-top:20px;color:#61748b;text-align:center}
+@media(max-width:600px){
+ .shell .account-dialog{max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px);border-radius:13px}
+ .shell .account-dialog>header{padding:16px 18px}
+ .shell .account-dialog-body{padding:18px}
+ .shell .account-dialog footer{padding:14px 18px;flex-wrap:wrap}
+ .shell .account-dialog .field input:not([type=file]),.shell .account-dialog .field select{font-size:16px;height:40px}
+ .shell .account-dialog .profile-picture-row{gap:12px}
+ .shell .account-dialog .profile-picture{width:56px;height:56px}
+ .shell .account-dialog .profile-picture-row .preview-actions{gap:4px}
+ .shell .account-dialog .profile-picture-row .btn{padding-inline:9px}
+ .shell .account-dialog .account-session{flex-wrap:wrap}
+ .shell .account-dialog .account-session .account-status{margin-left:32px}
+ .shell .team-workspace>.card-head{padding:14px;flex-wrap:wrap;gap:10px}
+ .shell .team-invite-row{flex-wrap:wrap}
+ .shell .team-invite-row>div{flex-basis:100%}
+ .shell .account-menu>button{min-height:40px}
+}

@@ -1,0 +1,40 @@
+/* Compact contact actions and connection setup, shared across lead surfaces. */
+.contact-icons { align-items: center; gap: 6px; flex-wrap: nowrap; }
+.contact-icons .ci,
+.contact-legend .ci {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; min-width: 30px; padding: 0;
+  border: 1px solid #e1e4e8; border-radius: 8px;
+  background: #fff; color: #647082; text-decoration: none; cursor: pointer;
+}
+.contact-icons .ci:hover { background: #f3f5f6; border-color: #b8c1cb; color: #28343f; }
+.contact-icons .ci.wa, .contact-legend .ci.wa { background: #f1faf5; border-color: #d5eadd; border-style: solid; color: #268453; }
+.contact-icons .ci.wa:hover { background: #e7f5ec; border-color: #a8d4b7; }
+.contact-icons .ci.wa.verified::after, .contact-legend .ci.wa.verified::after {
+  content: ''; position: absolute; right: -2px; bottom: -2px; width: 7px; height: 7px;
+  border: 2px solid white; border-radius: 50%; background: #28885c; box-sizing: content-box;
+}
+.contact-icons .ci svg { width: 17px; height: 17px; }
+.contact-icons .ci .provider-icon { width: 19px; height: 19px; }
+.contact-icons .ci:focus-visible { outline: 2px solid #718797; outline-offset: 3px; }
+.contact-legend { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.contact-legend .ci { width: 22px; height: 22px; min-width: 22px; border-radius: 6px; cursor: default; }
+.first-contact-actions { display: flex; align-items: center; gap: 6px; }
+.first-side .first-contact-actions .ci { width: 30px; height: 30px; }
+.quick .btn svg { width: 16px; height: 16px; }
+.integration-connection { padding: 20px; scroll-margin-top: 80px; }
+.integration-connection-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; }
+.integration-connection-head h2 { font-size: 15px; font-weight: 600; margin: 0; }
+.integration-connection form { max-width: 660px; }
+.integration-connection fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 12px; min-width: 0; }
+.integration-connection .field input { width: 100%; min-width: 0; }
+.integration-connection footer { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+.integration-connection .integration-help { font-size: 12px; }
+.integration-connection .integration-help p { margin: 8px 0; color: var(--color-muted, #68778f); }
+.integration-connection-note { padding: 9px 12px; margin: 0 0 16px; border: 1px solid #e4d6bd; border-radius: 8px; background: #faf6ed; color: #765b33; font-size: 12px; }
+.integration-connection-error { color: #b43b36; margin-top: 12px; font-size: 12px; }
+.integration-connection-notice { color: #28805b; margin-top: 12px; font-size: 12px; }
+.integration-check-note { color: var(--color-muted, #68778f); font-size: 11px; margin: 12px 0 0; }
+@media (pointer: coarse) {
+  .contact-icons .ci, .first-side .first-contact-actions .ci { width: 36px; height: 36px; min-width: 36px; }
+}

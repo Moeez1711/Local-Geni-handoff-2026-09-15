@@ -1,0 +1,108 @@
+.sms-layout{display:grid;grid-template-columns:minmax(280px,420px) minmax(0,1fr);gap:20px;align-items:start}
+.sms-compose h2,.sms-history h2{font-size:15px}
+.sms-compose fieldset{border:0;padding:0;margin:0;min-width:0}
+.sms-provider-options{display:flex;flex-wrap:wrap;gap:5px}
+.sms-provider-options button{display:flex;align-items:center;gap:7px;padding:8px 10px;border:1px solid var(--color-line);border-radius:8px;font-size:12px;cursor:pointer}
+.sms-provider-options button.on{border-color:var(--color-ink);background:#f4f5f7}
+.sms-compose-meta{display:flex;justify-content:space-between;font-size:11px;color:var(--color-muted);gap:12px}
+.sms-history article{border-top:1px solid var(--color-line);padding:16px 0}
+.sms-history article>header,.sms-history article>footer{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.sms-history article>footer>small{color:var(--color-muted);font-size:11px}
+.sms-history article>p{white-space:pre-wrap;overflow-wrap:anywhere;margin:10px 0;font-size:13px}
+.sms-history article>footer>div{display:flex}
+.sms-status{font-size:10px;text-transform:capitalize;padding:2px 7px;border-radius:10px;background:#f1f2f5;color:var(--color-muted)}
+.sms-status.delivered{background:#eaf8f0;color:#237448}
+.sms-status.failed,.sms-status.unknown,.sms-status.undelivered{background:#fff1ea;color:#b04d21}
+.sms-empty{display:grid;justify-items:center;gap:10px;padding:44px 16px;color:var(--color-muted)}
+.sms-review{border:1px solid var(--color-line);border-radius:10px;background:#f7f8fa;padding:14px;font-size:12px}
+.sms-review p{white-space:pre-wrap;overflow-wrap:anywhere;margin:10px 0}
+.sms-review small{color:var(--color-muted)}
+@media(max-width:1000px){.sms-layout{grid-template-columns:minmax(0,1fr)}}
+
+.sms-mode{display:flex;align-items:center;padding:3px;margin:0;border-radius:8px}
+.sms-mode>button{display:flex;align-items:center;gap:5px;min-height:26px;font-size:12px;padding:4px 10px;border-radius:6px}
+.sms-bulk-layout{grid-template-columns:minmax(300px,460px) minmax(0,1fr)}
+.sms-bulk-review{margin-top:16px;display:grid;gap:12px}
+.sms-bulk-review>small{display:block;line-height:1.5}
+.sms-bulk-review ul{max-height:180px;overflow:auto;padding-left:16px;line-height:1.8}
+.sms-batch-progress{display:grid;gap:5px;margin:12px 0;font-size:11px;color:var(--color-muted)}
+.sms-batch-progress progress{width:100%;height:5px;accent-color:#151718}
+.sms-batch-details{margin-top:16px;padding-top:16px;border-top:1px solid var(--color-line)}
+.sms-batch-details>header{display:flex;justify-content:space-between;align-items:center;font-size:13px}
+.sms-batch-details ul{max-height:280px;overflow:auto;margin:8px 0;padding:0;list-style:none}
+.sms-batch-details li{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:12px;padding:8px 0;border-top:1px solid var(--color-line)}
+.sms-batch-details li>small{width:100%;color:var(--color-muted)}
+.sms-batches article>footer{flex-wrap:wrap}
+.sms-batches article>footer>div{gap:5px;flex-wrap:wrap}
+@media(max-width:1100px){.sms-bulk-layout{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.sms-page .page-head{flex-wrap:wrap}.sms-page .page-actions{flex-wrap:wrap}.sms-compose-meta{flex-wrap:wrap}}
+
+.sms-workspace-tabs{display:flex;gap:6px;margin:-6px 0 0;align-items:center}
+.sms-workspace-tabs>button{display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border:1px solid transparent;border-radius:8px;color:var(--color-muted);font-size:13px;cursor:pointer}
+.sms-workspace-tabs>button.on{background:white;border-color:var(--color-line);color:var(--color-ink);font-weight:600}
+.sms-page .sms-compose textarea{min-height:100px;line-height:1.5}
+.sms-page .sms-compose .form{gap:12px}
+.sms-page .sms-sender{margin:0;font-size:11px}
+.sms-sender-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.sms-recipient-source{display:grid;gap:10px;min-width:0}
+.sms-recipient-source>header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.sms-recipient-source h3{font-size:13px;margin:0}
+.sms-source-tabs{display:flex;border-bottom:1px solid var(--color-line);gap:14px}
+.sms-source-tabs>button{display:flex;align-items:center;gap:5px;padding:7px 0;font-size:12px;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;color:var(--color-muted);cursor:pointer;border-radius:0}
+.sms-source-tabs>button.on{color:var(--color-ink);border-bottom-color:var(--color-ink);font-weight:600}
+.sms-file-import,.sms-file-mapping{display:grid;gap:10px;min-width:0}
+.sms-file-import>input[hidden]{display:none}
+.sms-page .sms-upload-zone{display:grid;justify-items:center;gap:7px;border:1px dashed #b8bfca;background:#fafbfc;border-radius:8px;padding:14px 12px;cursor:pointer;width:100%;min-width:0;text-align:center;color:var(--color-muted)}
+.sms-upload-zone strong{font-size:12px;color:var(--color-ink);max-width:100%;overflow-wrap:anywhere}
+.sms-upload-zone span{font-size:10px}
+.sms-page .sms-upload-zone:hover,.sms-page .sms-upload-zone.dragging{background:#f0f3f7;border-color:var(--color-ink)}
+.sms-import-preview{border:1px solid var(--color-line);border-radius:8px;padding:10px 12px;font-size:11px;min-width:0}
+.sms-import-preview>header{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between}
+.sms-import-preview>header>span{color:var(--color-muted);font-size:10px}
+.sms-import-preview ul{list-style:none;margin:8px 0 0;padding:0;max-height:150px;overflow:auto}
+.sms-import-preview li{display:flex;align-items:center;gap:6px;padding:3px 0;overflow-wrap:anywhere}
+.sms-import-preview details{margin-top:8px;color:var(--color-muted)}
+.sms-import-preview details li{display:block}
+.sms-import-preview details p{margin:8px 0}
+.sms-file-mapping>.btn{justify-self:start}
+.sms-file-mapping .system-auto-check{font-size:11px}
+.sms-list-source{display:flex;align-items:end;gap:8px}
+.sms-list-source>.field{flex:1;min-width:0}
+.sms-list-source>.btn{flex-shrink:0}
+.sms-recipient-summary{padding:10px 12px;border:1px solid var(--color-line);border-radius:8px;font-size:11px;min-width:0}
+.sms-recipient-summary>div{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sms-recipient-summary>div>span,.sms-recipient-summary>small{color:var(--color-muted)}
+.sms-recipient-summary>div>.ci{margin-left:auto}
+.sms-recipient-summary details{margin-top:8px}
+.sms-recipient-summary details textarea{margin-top:8px;width:100%;box-sizing:border-box}
+.sms-recipient-source .field>small{font-size:10px;color:var(--color-muted);line-height:1.5}
+.sms-history article:last-of-type{padding-bottom:0}
+@media(max-width:600px){.sms-workspace-tabs{margin-top:-2px}.sms-workspace-tabs>button{min-height:38px}.sms-page .sms-upload-zone{padding:16px 8px}.sms-source-tabs>button{min-height:36px}}
+
+/* Lead-level SMS composer. It stays in the app so the sender can review
+   permission, recipient, provider, and message before any request is made. */
+.sms-composer-backdrop{position:fixed;inset:0;z-index:95;display:grid;place-items:center;padding:20px;background:rgba(21,41,54,.35);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
+.sms-composer-modal{width:min(560px,100%);max-height:min(720px,calc(100dvh - 40px));display:flex;flex-direction:column;overflow:hidden;background:#fff;color:var(--color-heading);border:1px solid #d7e6e8;border-radius:18px;box-shadow:0 24px 80px rgba(15,40,48,.24);outline:none}
+.sms-composer-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:22px 24px 18px;border-bottom:1px solid #e5eeee}
+.sms-composer-header h2{margin:4px 0 5px;font-size:20px;letter-spacing:-.03em}
+.sms-composer-header .hint{margin:0;max-width:42ch}
+.sms-composer-body{overflow:auto;padding:22px 24px}
+.sms-composer-body>.form{gap:14px}
+.sms-composer-body .field>span,.sms-composer-body .field-label{font-size:12px;font-weight:500;color:var(--color-ink-2)}
+.sms-composer-status{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border:1px solid #d9e9e9;border-radius:10px;background:#f6fbfa;font-size:12px}
+.sms-composer-status.ready{color:#24734f}
+.sms-composer-status.error{color:#a14435;background:#fff6f3;border-color:#f0d4cf}
+.sms-composer-provider{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.sms-composer-provider button{display:inline-grid;place-items:center;width:34px;height:34px;border:1px solid #d5e1e5;border-radius:8px;background:#fff;cursor:pointer}
+.sms-composer-provider button.on{background:var(--color-accent-soft);border-color:var(--color-accent-border);box-shadow:inset 0 0 0 1px var(--color-accent)}
+.sms-composer-sender{margin:0;font-size:11px}
+.sms-composer-meta{display:flex;justify-content:space-between;gap:12px;color:var(--color-muted);font-size:11px}
+.sms-composer-review{display:grid;gap:12px;padding:15px;border:1px solid #d9e9e9;border-radius:11px;background:#f8fcfb}
+.sms-composer-review dl{display:grid;grid-template-columns:auto 1fr;gap:7px 14px;margin:0;font-size:12px}
+.sms-composer-review dt{color:var(--color-muted)}
+.sms-composer-review dd{margin:0;font-weight:500;overflow-wrap:anywhere}
+.sms-composer-review p{white-space:pre-wrap;overflow-wrap:anywhere;margin:0;padding-top:10px;border-top:1px solid #e0eceb;line-height:1.55}
+.sms-composer-footer{display:flex;align-items:center;justify-content:flex-end;gap:8px;padding:16px 24px;border-top:1px solid #e5eeee;background:#f8fbfb}
+.sms-composer-modal :is(button,a,input,textarea,select):focus-visible{outline:3px solid var(--color-accent);outline-offset:3px}
+@media(max-width:600px){.sms-composer-backdrop{padding:0}.sms-composer-modal{max-height:100dvh;height:100dvh;border-radius:0}.sms-composer-header,.sms-composer-body,.sms-composer-footer{padding-left:16px;padding-right:16px}.sms-composer-footer{flex-wrap:wrap}.sms-composer-footer .btn{flex:1}}
+@media(prefers-reduced-motion:reduce){.sms-composer-backdrop{backdrop-filter:none;-webkit-backdrop-filter:none}}
