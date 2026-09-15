@@ -12,6 +12,8 @@ services:
         value: 0.0.0.0
       - key: RENDER
         value: "true"
+      - key: ALLOW_ALL_HOSTS
+        value: "1"
       - key: GOOGLE_PLACES_API_KEY
         sync: false
       - key: VITE_GOOGLE_MAPS_JS_KEY
