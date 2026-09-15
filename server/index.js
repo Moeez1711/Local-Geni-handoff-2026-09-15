@@ -41,15 +41,11 @@ app.set('trust proxy', 1);
 app.use((req, res, next) => {
   const origin = req.get('origin');
   if (origin) {
-    try {
-      const parsed = new URL(origin);
-      if (isAllowedHost(parsed.hostname)) {
-        res.set('Access-Control-Allow-Origin', origin);
-        res.set('Access-Control-Allow-Credentials', 'true');
-        res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
-        res.set('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-test-role');
-      }
-    } catch { /* ignore */ }
+    res.set('Access-Control-Allow-Origin', origin);
+    res.set('Access-Control-Allow-Credentials', 'true');
+    res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+    res.set('Access-Control-Allow-Headers', req.get('access-control-request-headers') || 'Content-Type, Authorization, x-test-role, Range');
+    res.set('Access-Control-Expose-Headers', 'Content-Disposition, Content-Length, Set-Cookie');
   }
   if (req.method === 'OPTIONS') return res.sendStatus(204);
   next();

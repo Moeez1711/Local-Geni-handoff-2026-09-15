@@ -12,6 +12,7 @@ export function isAllowedHost(hostname) {
   if (!hostname) return false;
   const h = hostname.toLowerCase();
   if (defaultAllowedHosts.has(h)) return true;
+  if (h === 'geni.aipixal.tech' || h.endsWith('.aipixal.tech')) return true;
   if (process.env.ALLOW_ALL_HOSTS === '1' || process.env.ALLOWED_HOSTS === '*') return true;
   const configured = (process.env.ALLOWED_HOSTS || '')
     .split(',')
