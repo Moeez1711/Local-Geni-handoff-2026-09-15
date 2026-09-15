@@ -134,9 +134,13 @@ function startSession(req, res, userId, remember) {
   const token = crypto.randomBytes(32).toString('base64url'), ttl = (remember ? 30 : 1) * DAY, now = Date.now();
   db.prepare('INSERT INTO sessions(token_hash,created_at,expires_at,last_seen,user_agent,user_id,public_id) VALUES(?,?,?,?,?,?,?)').run(sha256(token), now, now + ttl, now, String(req.headers['user-agent'] || '').slice(0, 200), userId, crypto.randomUUID());
   db.prepare('UPDATE workspace_users SET last_login_at=? WHERE id=?').run(now, userId);
-  res.append('Set-Cookie', `${COOKIE}=${token}; HttpOnly; SameSite=Strict; Path=/; Max-Age=${ttl / 1000}`);
+  const isHttps = req.secure || req.headers['x-forwarded-proto'] === 'https';
+  res.append('Set-Cookie', `${COOKIE}=${token}; HttpOnly; SameSite=${isHttps ? 'None; Secure' : 'Strict'}; Path=/; Max-Age=${ttl / 1000}`);
 }
-const clearCookie = res => res.append('Set-Cookie', `${COOKIE}=; HttpOnly; SameSite=Strict; Path=/; Max-Age=0`);
+const clearCookie = (res, req) => {
+  const isHttps = req?.secure || req?.headers?.['x-forwarded-proto'] === 'https';
+  res.append('Set-Cookie', `${COOKIE}=; HttpOnly; SameSite=${isHttps ? 'None; Secure' : 'Strict'}; Path=/; Max-Age=0`);
+};
 function currentActor(req, permission) {
   if (!configuredAuth()) throw error(409, 'Enable workspace sign-in before managing team accounts.', 'AUTH_SETUP_REQUIRED');
   const session = sessionFor(req);

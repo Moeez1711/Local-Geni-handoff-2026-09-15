@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import express from 'express';
-import { config, ROOT } from './config.js';
+import { config, ROOT, isAllowedHost } from './config.js';
 import api from './routes/api.js';
 import { requireAuth } from './auth.js';
 import { shutdown } from './scanner/engine.js';
@@ -23,12 +23,12 @@ import crmRouter from './routes/crm.js';
 import listsRouter from './routes/lists.js';
 import customFieldsRouter from './routes/customFields.js';
 import integrationsRouter from './routes/integrations.js';
+import firecrawlRouter from './routes/firecrawl.js';
+import categoriesRouter, { mountCategoryOAuthCallback } from './routes/categories.js';
+import { categoryCatalog } from './categoryCatalog.js';
 import smsRouter from './routes/sms.js';
 import assistantRouter from './routes/assistant.js';
 import { smsBatchService } from './smsBatches.js';
-import categoriesRouter, { mountCategoryOAuthCallback } from './routes/categories.js';
-import { categoryCatalog } from './categoryCatalog.js';
-import firecrawlRouter from './routes/firecrawl.js';
 
 setEmailUnsubscribeProvider(getUnsubscribeLink);
 setEmailPublicSync(syncPublicOptOuts);
@@ -37,6 +37,24 @@ setEmailCampaignPublicSync(syncPublicOptOuts);
 const app = express();
 app.disable('x-powered-by');
 app.set('trust proxy', 1);
+
+app.use((req, res, next) => {
+  const origin = req.get('origin');
+  if (origin) {
+    try {
+      const parsed = new URL(origin);
+      if (isAllowedHost(parsed.hostname)) {
+        res.set('Access-Control-Allow-Origin', origin);
+        res.set('Access-Control-Allow-Credentials', 'true');
+        res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+        res.set('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-test-role');
+      }
+    } catch { /* ignore */ }
+  }
+  if (req.method === 'OPTIONS') return res.sendStatus(204);
+  next();
+});
+
 mountCategoryOAuthCallback(app);
 app.use('/webhooks/whatsapp', createWhatsAppWebhookRouter(whatsappService));
 app.use('/api', requireLocalEmailOrigin);

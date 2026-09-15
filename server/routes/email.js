@@ -11,14 +11,14 @@ export function requireLocalEmailOrigin(req, res, next) {
   try {
     const host = new URL(`http://${req.get('host') || ''}`);
     if (!isAllowedHost(host.hostname) || !isAllowedPort(host.port) || host.username || host.password || host.pathname !== '/' || host.search || host.hash) return deny();
-    if (req.get('sec-fetch-site') === 'cross-site') return deny();
     const origin = req.get('origin');
     if (origin) {
       const parsed = new URL(origin);
       if (!['http:', 'https:'].includes(parsed.protocol) || !isAllowedHost(parsed.hostname) || !isAllowedPort(parsed.port) || parsed.username || parsed.password || parsed.pathname !== '/' || parsed.search || parsed.hash) return deny();
-      // Only the API's own origin and its dedicated local development UI are accepted.
-      if (parsed.host !== host.host && parsed.port !== '5173') return deny();
-    } else if (!['GET', 'HEAD', 'OPTIONS'].includes(req.method) && req.get('sec-fetch-site') !== 'same-origin') return deny();
+    } else {
+      if (req.get('sec-fetch-site') === 'cross-site') return deny();
+      if (!['GET', 'HEAD', 'OPTIONS'].includes(req.method) && req.get('sec-fetch-site') !== 'same-origin') return deny();
+    }
     res.set({ 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'X-Content-Type-Options': 'nosniff' });
     next();
   } catch { return deny(); }

@@ -1,7 +1,10 @@
+const API_BASE = ((typeof import.meta !== 'undefined' && import.meta.env?.VITE_API_BASE_URL) || globalThis.process?.env?.VITE_API_BASE_URL || '').replace(/\/+$/, '');
+
 async function request(method, url, body, { signal, raw } = {}) {
-  const res = await fetch(`/api${url}`, {
+  const res = await fetch(`${API_BASE}/api${url}`, {
     method,
     signal,
+    credentials: 'include',
     headers: body ? { 'Content-Type': 'application/json' } : undefined,
     body: body ? JSON.stringify(body) : undefined,
   });
@@ -32,7 +35,7 @@ export const qs = (obj) => {
 
 /** One shared EventSource; auto-reconnects (browser default). */
 export function subscribe(onEvent, onStatus) {
-  const es = new EventSource('/api/events');
+  const es = new EventSource(`${API_BASE}/api/events`, { withCredentials: true });
   es.onopen = () => onStatus?.(true);
   es.onerror = () => onStatus?.(false);
   es.onmessage = (m) => { try { onEvent(JSON.parse(m.data)); } catch { /* ignore */ } };
