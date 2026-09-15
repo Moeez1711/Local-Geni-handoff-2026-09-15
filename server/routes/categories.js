@@ -2,7 +2,7 @@ import crypto from 'node:crypto';
 import { Router } from 'express';
 import { categoryCatalog, CATEGORY_CALLBACK } from '../categoryCatalog.js';
 import { workspacePermissionBinding, requireWorkspacePermission } from '../auth.js';
-import { config } from '../config.js';
+import { config, isAllowedHost, isAllowedPort } from '../config.js';
 
 export function createCategoriesRouter(service = categoryCatalog) {
   const router = Router();
@@ -30,7 +30,7 @@ export function mountCategoryOAuthCallback(app) {
   app.get(CATEGORY_CALLBACK, (req, res) => {
     let host;
     try { host = new URL(`http://${req.get('host')}`); } catch { return res.sendStatus(400); }
-    if (!['127.0.0.1', 'localhost', '[::1]'].includes(host.hostname) || ![String(config.port), '5173'].includes(host.port)) return res.sendStatus(403);
+    if (!isAllowedHost(host.hostname) || !isAllowedPort(host.port)) return res.sendStatus(403);
     const nonce = crypto.randomBytes(18).toString('base64');
     res.set({ 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': `default-src 'none'; script-src 'nonce-${nonce}'; base-uri 'none'; frame-ancestors 'none'` });
     res.type('html').send(`<!doctype html><html lang="en"><meta charset="utf-8"><title>Connecting Google · Local Geni</title><body><p>Returning to Local Geni…</p><script nonce="${nonce}">

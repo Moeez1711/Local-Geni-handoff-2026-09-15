@@ -3,6 +3,7 @@ import { db } from './db.js';
 import { getPrivateSecret, setPrivateSecret, deletePrivateSecret } from './emailVault.js';
 import { categories, countries, categorySnapshot } from './catalog.js';
 import { mergeCategoryRows } from '../shared/categorySearch.js';
+import { isAllowedHost } from './config.js';
 
 const SECRET = 'google-category-catalog';
 const DAY = 86400000;
@@ -75,7 +76,7 @@ export function createCategoryCatalog({ database = db, fetchFn = (...args) => fe
     const settings = read();
     if (!settings.clientId || !settings.clientSecret) throw fail(409, 'Save your Google OAuth client first.');
     const parsed = new URL(origin);
-    if (!['http:', 'https:'].includes(parsed.protocol) || !['127.0.0.1', 'localhost', '[::1]'].includes(parsed.hostname) || parsed.origin !== origin) throw fail(400, 'Connect from the local app.');
+    if (!['http:', 'https:'].includes(parsed.protocol) || !isAllowedHost(parsed.hostname) || parsed.origin !== origin) throw fail(400, 'Connect from the local app.');
     for (const [key, value] of pending) if (value.expires < now() || value.binding === binding) pending.delete(key);
     if (pending.size >= 20) throw fail(429, 'Finish an existing Google connection first.');
     const state = crypto.randomBytes(32).toString('base64url'), verifier = crypto.randomBytes(48).toString('base64url');

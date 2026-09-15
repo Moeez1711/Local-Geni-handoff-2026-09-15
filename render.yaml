@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: local-geni
+    runtime: node
+    plan: free
+    buildCommand: npm run setup && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 22.13.0
+      - key: HOST
+        value: 0.0.0.0
+      - key: RENDER
+        value: "true"
+      - key: GOOGLE_PLACES_API_KEY
+        sync: false
+      - key: VITE_GOOGLE_MAPS_JS_KEY
+        sync: false
+      - key: FIRECRAWL_API_KEY
+        sync: false

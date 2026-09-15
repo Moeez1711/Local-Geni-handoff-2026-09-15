@@ -36,6 +36,7 @@ setEmailCampaignPublicSync(syncPublicOptOuts);
 
 const app = express();
 app.disable('x-powered-by');
+app.set('trust proxy', 1);
 mountCategoryOAuthCallback(app);
 app.use('/webhooks/whatsapp', createWhatsAppWebhookRouter(whatsappService));
 app.use('/api', requireLocalEmailOrigin);
@@ -70,10 +71,9 @@ app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
   res.status(status).json({ error: err.message || 'Server error' });
 });
 
-// Bound to localhost: this is a personal tool and the server holds the Places API key.
 let stopQa = () => {};
-const server = app.listen(config.port, '127.0.0.1', () => {
-  console.log(`Local Geni on http://127.0.0.1:${config.port}`);
+const server = app.listen(config.port, config.host, () => {
+  console.log(`Local Geni on http://${config.host === '0.0.0.0' ? 'localhost' : config.host}:${config.port}`);
   if (!config.placesKey) console.warn('GOOGLE_PLACES_API_KEY missing; add it to .env');
   kickSites(); // finish website analyses left pending by a previous run
   campaignService.startWorker();

@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { config } from '../config.js';
+import { config, isAllowedHost, isAllowedPort } from '../config.js';
 import { emailService } from '../emailService.js';
 import { accountIds, createAccount, currentAccountId, selectAccount, deleteAccount } from '../emailAccounts.js';
 import { inboxService } from '../emailInbox.js';
@@ -10,14 +10,12 @@ export function requireLocalEmailOrigin(req, res, next) {
   const deny = () => res.status(403).json({ error: 'Local Geni actions are available only from this local app.', code: 'EMAIL_ORIGIN_DENIED' });
   try {
     const host = new URL(`http://${req.get('host') || ''}`);
-    const allowedHosts = new Set(['127.0.0.1', 'localhost', '[::1]']);
-    const allowedPorts = new Set([String(config.port), '5173']);
-    if (!allowedHosts.has(host.hostname) || !allowedPorts.has(host.port) || host.username || host.password || host.pathname !== '/' || host.search || host.hash) return deny();
+    if (!isAllowedHost(host.hostname) || !isAllowedPort(host.port) || host.username || host.password || host.pathname !== '/' || host.search || host.hash) return deny();
     if (req.get('sec-fetch-site') === 'cross-site') return deny();
     const origin = req.get('origin');
     if (origin) {
       const parsed = new URL(origin);
-      if (!['http:', 'https:'].includes(parsed.protocol) || !allowedHosts.has(parsed.hostname) || !allowedPorts.has(parsed.port) || parsed.username || parsed.password || parsed.pathname !== '/' || parsed.search || parsed.hash) return deny();
+      if (!['http:', 'https:'].includes(parsed.protocol) || !isAllowedHost(parsed.hostname) || !isAllowedPort(parsed.port) || parsed.username || parsed.password || parsed.pathname !== '/' || parsed.search || parsed.hash) return deny();
       // Only the API's own origin and its dedicated local development UI are accepted.
       if (parsed.host !== host.host && parsed.port !== '5173') return deny();
     } else if (!['GET', 'HEAD', 'OPTIONS'].includes(req.method) && req.get('sec-fetch-site') !== 'same-origin') return deny();
